@@ -1,9 +1,11 @@
 FIND 15L ACCOUNT & RESET PASSWORD
   Go to https://sdacs.ucsd.edu/~icc/index.php and from there sign in and reset the 15L account password
+  
+  **For my lab I was able to reset my password but everytime I am prompted in the terminal to log in the password never works and when I went to reset my account passowrd again with the same password that I chose it said I cannot reuse the previous password which confirms that I am ussing the correct password it's just not working. :(
 
 INSTALLING VISUAL STUDIO CODE
   Go to https://code.visualstudio.com/ and install visual sttdio code from there.
-  
+
 CONNECTION REMOTELY
   Use the following command in the terminal to connect to the ssh:
   ssh <account username>@ieng6.ucsd.edu
@@ -12,8 +14,7 @@ CONNECTION REMOTELY
   yes
 
   Then enter your account password
-  ![Image](https:/github.com/glhidalgo/login.PNG)
-  
+
 RUNNING COMMANDS
   Now that you are logged into the ssh try some commands to see if they work in the ssh.
   Some commands you can try:
