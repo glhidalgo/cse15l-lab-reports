@@ -1,17 +1,31 @@
 FIND 15L ACCOUNT & RESET PASSWORD
-Go to https://sdacs.ucsd.edu/~icc/index.php and from there sign in and reset the 15L account password
+  Go to https://sdacs.ucsd.edu/~icc/index.php and from there sign in and reset the 15L account password
 
 INSTALLING VISUAL STUDIO CODE
-Go to https://code.visualstudio.com/ and install visual sttdio code from there.
+  Go to https://code.visualstudio.com/ and install visual sttdio code from there.
 
 CONNECTION REMOTELY
-Use the following command in the terminal to connect to the ssh:
-ssh <account username>@ieng6.ucsd.edu
+  Use the following command in the terminal to connect to the ssh:
+  ssh <account username>@ieng6.ucsd.edu
 
-Confirm that you want to connect by typing:
-yes
+  Confirm that you want to connect by typing:
+  yes
 
-Then enter your account password
+  Then enter your account password
 
 RUNNING COMMANDS
-Now that you are logged into the ssh try some commands to see if they work in the ssh.
+  Now that you are logged into the ssh try some commands to see if they work in the ssh.
+  Some commands you can try:
+  cd ~
+  cd
+  ls
+  ls -lat
+
+MOVING FILES VIA SCP
+  Create a java file on your personal computer and save it.
+  Then go to that directory in your terminal and run the following command:
+  scp WhereAmI.java <account username>@ieng6.ucsd.edu:~/
+
+  Log in using the password you set and now the file should be in yor ssh. You can check by logging into the ssh and using the 'ls' command.
+
+  SETTING AN SSH KEY
