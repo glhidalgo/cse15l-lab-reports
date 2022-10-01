@@ -28,4 +28,5 @@ MOVING FILES VIA SCP
 
   Log in using the password you set and now the file should be in yor ssh. You can check by logging into the ssh and using the 'ls' command.
 
-  SETTING AN SSH KEY
+SETTING AN SSH KEY
+
