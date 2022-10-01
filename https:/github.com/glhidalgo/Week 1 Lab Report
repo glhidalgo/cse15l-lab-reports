@@ -31,7 +31,8 @@ MOVING FILES FROM PERSONAL CLIENT TO SSH VIA SCP
   Then go to that directory in your terminal and run the following command:
   scp WhereAmI.java <account username>@ieng6.ucsd.edu:~/
 
-  Log in using the password you set and now the file should be in yor ssh. You can check by logging into the ssh and using the 'ls' command.
+  Log in using the password you set and now the file should be in yor ssh. You can check by logging into the ssh 
+  and using the 'ls' command.
 
 SETTING AN SSH KEY
   On your client to set an ssh key type in the following command:
@@ -51,12 +52,14 @@ SETTING AN SSH KEY
   scp <id_rsa.pub file path> <account username>@ieng6.ucsd.edu:~/.ssh/authorized_keys
   
 HOW TO SAVE TIME IN REMOTE RUNNING
-  Adding a command in quotes after the ssh login command will runn the command as so as you are logged into ssh:
+  Adding a command in quotes after the ssh login command will runn the command as so as you are logged into 
+  ssh:
   ssh <account username>@ieng6.ucsd.edu "<command>"
   
   You can also run multiple commands at once by separating them with semicolons.
   
-  You can also save time using the up arrow on your keyboard to get the last command that was run in case you need it.
+  You can also save time using the up arrow on your keyboard to get the last command that was run in case you 
+  need it.
     
 End of lab report.
 
