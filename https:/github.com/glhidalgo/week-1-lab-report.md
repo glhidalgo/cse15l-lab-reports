@@ -1,4 +1,5 @@
-FINDING 15L SSH ACCOUNT & RESETTING PASSWORD
+FINDING 15L SSH ACCOUNT & RESETTING PASSWORD:
+
   Go to https://sdacs.ucsd.edu/~icc/index.php and from there sign in and reset the 15L account password
   
   **For my lab I was able to reset my password but everytime I am prompted in the terminal to log in the 
@@ -6,10 +7,12 @@ FINDING 15L SSH ACCOUNT & RESETTING PASSWORD
     chose it said I cannot reuse the previous password which confirms that I am ussing the correct password 
     it's just not working. :(
 
-INSTALLING VISUAL STUDIO CODE
+INSTALLING VISUAL STUDIO CODE:
+
   Go to https://code.visualstudio.com/ and install visual stUdio code from there.
 
-CONNECTING TO SSH REMOTELY
+CONNECTING TO SSH REMOTELY:
+
   Use the following command in the terminal to connect to the ssh:
   ssh <account username>@ieng6.ucsd.edu
 
@@ -18,7 +21,8 @@ CONNECTING TO SSH REMOTELY
 
   Then enter your account password
 
-RUNNING COMMANDS IN SSH
+RUNNING COMMANDS IN SSH:
+  
   Now that you are logged into the ssh try some commands to see if they work in the ssh.
   Some commands you can try:
   cd ~
@@ -26,7 +30,8 @@ RUNNING COMMANDS IN SSH
   ls
   ls -lat
 
-MOVING FILES FROM PERSONAL CLIENT TO SSH VIA SCP
+MOVING FILES FROM PERSONAL CLIENT TO SSH VIA SCP:
+  
   Create a java file on your personal computer and save it.
   Then go to that directory in your terminal and run the following command:
   scp WhereAmI.java <account username>@ieng6.ucsd.edu:~/
@@ -34,7 +39,8 @@ MOVING FILES FROM PERSONAL CLIENT TO SSH VIA SCP
   Log in using the password you set and now the file should be in yor ssh. You can check by logging into the ssh 
   and using the 'ls' command.
 
-SETTING AN SSH KEY
+SETTING AN SSH KEY:
+  
   On your client to set an ssh key type in the following command:
   ssh-keygen
   
@@ -51,7 +57,8 @@ SETTING AN SSH KEY
   Then logout and move the 'id_rsa.pub' to your ssh account with the following command:
   scp <id_rsa.pub file path> <account username>@ieng6.ucsd.edu:~/.ssh/authorized_keys
   
-HOW TO SAVE TIME IN REMOTE RUNNING
+HOW TO SAVE TIME IN REMOTE RUNNING:
+  
   Adding a command in quotes after the ssh login command will runn the command as so as you are logged into 
   ssh:
   ssh <account username>@ieng6.ucsd.edu "<command>"
