@@ -1,19 +1,45 @@
 # WEEK 3 LAB REPORT
 ### PART 1
+<pre><code>import java.io.IOException;
+import java.net.URI;
+import java.util.ArrayList;
+
+class SearchEngine implements URLHandler {
+
+    ArrayList<String> SE = new ArrayList<String>(6);
+
+
+    public String handleRequest(URI url) {
+        
+        return null;
+    }
+    
+}
+
+class NumberServer {
+    public static void main(String[] args) throws IOException {
+        if(args.length == 0){
+            System.out.println("Missing port number! Try any number between 1024 to 49151");
+            return;
+        }
+
+        int port = Integer.parseInt(args[0]);
+
+        Server.start(port, new Handler());
+    }
+}
+</code></pre>
 
  
 ### PART 2
 For the *ArrayExamples.java* I created a test for the *reversed(int[] arr)* method.
-<pre><code>
-  @Test
+<pre><code>  @Test
   public void ttest() {
     int[] input1 = { 0, 0, 1 };
-    assertArrayEquals(new int[]{ 1, 0, 0 }, ArrayExamples.reversed(input1));
- </code></pre>
+    assertArrayEquals(new int[]{ 1, 0, 0 }, ArrayExamples.reversed(input1)); </code></pre>
  
 Here is the output I got from the test and we can see that the mthod is not reversing the array.
-<pre><code>
-PS C:\Users\ghida\OneDrive\Documents\GitHub\lab3> javac -cp ".;lib/hamcrest-core-1.3.jar;lib/junit-4.13.2.jar" *.java
+<pre><code>PS C:\Users\ghida\OneDrive\Documents\GitHub\lab3> javac -cp ".;lib/hamcrest-core-1.3.jar;lib/junit-4.13.2.jar" *.java
 PS C:\Users\ghida\OneDrive\Documents\GitHub\lab3> java -cp ".;lib/junit-4.13.2.jar;lib/hamcrest-core-1.3.jar" org.junit.runner.JUnitCore ArrayTests
 JUnit version 4.13.2
 ..E.
@@ -37,17 +63,14 @@ qual(ExactComparisonCriteria.java:8)
         at org.junit.internal.ComparisonCriteria.arrayEquals(Comparis        ... 38 more
 
 FAILURES!!!
-Tests run: 3,  Failures: 1
- </code></pre>
+Tests run: 3,  Failures: 1 </code></pre>
 
 I saw that in the mothd that the mthod wass not returning the *newArray* that we created and was instead returning the input array (*arr*).
 I also noticed that the mthod was not actually reversing the elements into the *newArray* and I had to switch *arr* and *newArray* on the fourth line of the method.
-<pre><code>
-  static int[] reversed(int[] arr) {
+<pre><code>  static int[] reversed(int[] arr) {
     int[] newArray = new int[arr.length];
     for(int i = 0; i < arr.length; i += 1) {
       newArray[i] = arr[arr.length - i - 1];
     }
     return newArray;
-  }
- </code></pre>
+  }</code></pre>
