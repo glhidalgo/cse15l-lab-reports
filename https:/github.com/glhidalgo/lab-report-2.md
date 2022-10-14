@@ -1,4 +1,4 @@
-# WEEK 3 LAB REPORT
+# LAB REPORT 2
 ### PART 1
 Simplest search engine code:
 <pre><code>import java.io.IOException;
