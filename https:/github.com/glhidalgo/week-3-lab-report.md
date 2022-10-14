@@ -1,8 +1,8 @@
 # WEEK 3 LAB REPORT
+### PART 1
 
-## PART 1
  
-## PART 2
+### PART 2
 For the *ArrayExamples.java* I created a test for the *reversed(int[] arr)* method.
 <pre><code>
   @Test
