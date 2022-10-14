@@ -1,22 +1,50 @@
 # WEEK 3 LAB REPORT
 ### PART 1
+Simplest search engine code:
 <pre><code>import java.io.IOException;
 import java.net.URI;
 import java.util.ArrayList;
 
-class SearchEngine implements URLHandler {
-
-    ArrayList<String> SE = new ArrayList<String>(6);
-
+class Handlerr implements URLHandler {
+    // The one bit of state on the server: a number that will be manipulated by
+    // various requests.
+    int num = 0;
+    ArrayList<String> searches = new ArrayList<String>(10);
 
     public String handleRequest(URI url) {
-        
-        return null;
+        int userNum = 0;
+        if (url.getPath().equals("/")) {
+            userNum++;
+            return String.format("Welcome to our search engine! You are our ", userNum, "th user!");
+        } 
+        else {
+            System.out.println("Path: " + url.getPath());
+            if (url.getPath().contains("/add")) {
+                String[] parameters = url.getQuery().split("=");
+                if (parameters[0].equals("search")) {
+                    int indexOfSearch = 0;
+                    int isInList = 0;
+                    for (int i = 0; i > searches.size(); i++) {
+                        if (searches.get(i) == parameters[1]){
+                            isInList++;
+                            indexOfSearch = i;
+                        }
+                    }
+                    if (isInList > 0) {
+                        return String.format("What you are trying to search has already been searched: ", searches.get(indexOfSearch));
+                    }
+                    else {
+                        searches.add(parameters[1]);
+                        return String.format( "Your search has been added to our engine: ", parameters[1]);
+                    }
+                }
+            }
+            return "404 Not Found!";
+        }
     }
-    
 }
 
-class NumberServer {
+class SearchEngine {
     public static void main(String[] args) throws IOException {
         if(args.length == 0){
             System.out.println("Missing port number! Try any number between 1024 to 49151");
@@ -27,9 +55,9 @@ class NumberServer {
 
         Server.start(port, new Handler());
     }
-}
-</code></pre>
+}</code></pre>
 
+***Did not finish.***
  
 ### PART 2
 For the *ArrayExamples.java* I created a test for the *reversed(int[] arr)* method.
