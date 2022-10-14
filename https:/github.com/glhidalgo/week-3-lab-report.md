@@ -11,6 +11,12 @@ Here is the output I got from the test and we can see that the mthod is not reve
 
 I saw that in the mothd that the mthod wass not returning the *newArray* that we created and was instead returning the input array (*arr*).
 I also noticed that the mthod was not actually reversing the elements into the *newArray* and I had to switch *arr* and *newArray* on the fourth line of the method.
-
-![image](https://user-images.githubusercontent.com/114626503/195947610-9f830f3f-da3c-4551-a8b0-e36ed6bb0124.png)
-
+<pre><code>
+  static int[] reversed(int[] arr) {
+    int[] newArray = new int[arr.length];
+    for(int i = 0; i < arr.length; i += 1) {
+      newArray[i] = arr[arr.length - i - 1];
+    }
+    return newArray;
+  }
+ </code></pre>
