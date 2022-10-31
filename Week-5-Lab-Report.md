@@ -1,5 +1,15 @@
 # LAB REPORT 3
 ## Less command
+### Adding line numbers when opening file
+To add number lines when opening the contents ofa file using the less command us the -N option
+<pre><code> less -N [file] </code></pre>
+![image](https://user-images.githubusercontent.com/114626503/199123389-2a78ff91-54bc-43fe-9f52-339f3b7acfe8.png)
+
+
+###
+
+###
+
 
 ## Find command
 ### Finding files created/modified before a file
