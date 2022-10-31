@@ -1,10 +1,27 @@
 # LAB REPORT 3
-### Less command
+## Less command
 
-### Find command
+## Find command
 
-### Grep command
-When you want to find just the count of a word in a file ise the -c option:
+## Grep command
+### Counting the text
+When you want to find just the count of the text in a file, use the -c option:
 <pre><code> grep -c [text] [file] </code></pre>
 ![image](https://user-images.githubusercontent.com/114626503/199080094-b7271d57-a065-4f67-8f20-d9dacce303ff.png)                                                  
 As you can see in the first command we ask it to find "how" and it shows us the three parts but when we use the -c we get a clean count.
+
+### Searching through all files in a directory
+When you want to search all files in a directory at once, instead of typing out all the file names you can just type * at the end:
+<pre><code> grep [text] * </code></pre>
+![image](https://user-images.githubusercontent.com/114626503/199082226-a8b118a2-5706-44ce-88a5-59e515fab617.png)
+
+Here it gives us the file name and where the text is found. If you only need to know just the files that contain the text you can just use the -l option to make things cleaner:
+
+![image](https://user-images.githubusercontent.com/114626503/199082513-31a54fd4-0aca-450f-aa50-2f9d4e81017f.png)
+### Searching for a specific word
+In the first image for Searching through all files in a directory most of the words dont completely match the text that we searched, this is because grep only searches for the exact characters we chose throughout the files. We can search for specific words by using the -w option:
+
+<pre><code> grep -w [text] [file] </code></pre>
+
+![image](https://user-images.githubusercontent.com/114626503/199083718-e0c2093b-33d7-412d-92b7-f7e747ec931e.png)
+
