@@ -2,6 +2,23 @@
 ## Less command
 
 ## Find command
+### Finding files created/modified before a file
+Use the -newer option to find a file created/modified before the file you choose:
+
+<pre><code> find -newer [file] </code></pre>
+
+![image](https://user-images.githubusercontent.com/114626503/199087244-e8b99b44-8127-49da-b19a-d23ebdbc5205.png)
+### Find a file by name
+use the -name option to search for a file by name:
+
+<pre><code> find -name [file] </code></pre>
+
+### Use find to print full directory of file
+Using -name will print the directory from the directory you are finding from so to get the full directory use "~+" as the search directory:
+<pre><code> ~+ -name [file] </code></pre>
+
+![image](https://user-images.githubusercontent.com/114626503/199096927-8299661c-f656-4621-9b86-0946d02e9d4c.png)
+
 
 ## Grep command
 ### Counting the text
