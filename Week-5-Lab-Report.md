@@ -6,10 +6,16 @@ To add number lines when opening the contents ofa file using the less command us
 ![image](https://user-images.githubusercontent.com/114626503/199123389-2a78ff91-54bc-43fe-9f52-339f3b7acfe8.png)
 
 
-###
+### Leaving content in the console
+If you want to keep the text after you exit use the -X option to keep the text on-screen:
+<pre><code> less -X [file] </code></pre>
+![image](https://user-images.githubusercontent.com/114626503/199124365-191a8120-907a-433d-a262-ef6761d14f12.png)
 
-###
 
+### Starting at text and highlighting text
+If you want to start reading at where the first instance text of text you choose is the -p option which also highlights all the occurances of the text you choose:
+<pre><code> less -p[text] [file] </code></pre>
+![image](https://user-images.githubusercontent.com/114626503/199124805-610c1947-dd27-4300-b309-035a0c3b92a2.png)
 
 ## Find command
 ### Finding files created/modified before a file
