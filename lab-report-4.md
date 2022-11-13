@@ -6,5 +6,6 @@ Our group chose:
 
 The shortest sequence of vim commands to complete the task was:
 
-/start<enter>5sbase<esc>n.n.n.<esc>:wq
+/start\<enter>5sbase\<esc>n.n.n.\<esc>:wq
+
 
