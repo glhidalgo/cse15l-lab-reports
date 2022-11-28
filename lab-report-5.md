@@ -25,4 +25,8 @@ else
     exit
 fi</code></pre>
 
+## Examples ##
+
 ![image](https://user-images.githubusercontent.com/114626503/204302860-20296453-e37b-4849-8555-9b4868b13ef0.png)
+
+In this example the code clones the repository checks to see if the ListExamples.java file exists, in this case it does not so the script tells the user that does not exist and gives the submission a score of 0.
