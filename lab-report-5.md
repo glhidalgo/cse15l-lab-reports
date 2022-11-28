@@ -24,3 +24,5 @@ else
     echo "Score: 0"
     exit
 fi</code></pre>
+
+![image](https://user-images.githubusercontent.com/114626503/204302860-20296453-e37b-4849-8555-9b4868b13ef0.png)
