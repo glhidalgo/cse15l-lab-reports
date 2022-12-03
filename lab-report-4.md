@@ -8,7 +8,7 @@
 /start\<enter>5sbase\<esc>n.n.n.:wq
 
 Description:\
-So we use "/" to get to the first instance where "start" is used.
+So we use "/" to get to the first instance where "start" is used.\
 ![image](https://user-images.githubusercontent.com/114626503/205428405-01eddaf5-45a5-4de0-b8ae-10d35d39b211.png)\
 Then we press enter to move to the first letter of the word.\
 ![image](https://user-images.githubusercontent.com/114626503/205428567-f5fc8a4a-da43-4656-a1ef-22c2d9a45184.png)\
